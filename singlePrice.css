@@ -1,0 +1,127 @@
+body {
+    font-family: 'Karla', sans-serif;
+    background-color: hsl(204, 43%, 93%);
+}
+
+.hassle-free {
+    color: hsl(71, 73%, 54%);
+}
+
+.join {
+    color: hsl(179, 62%, 43%);
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+.gain-access {
+    color: hsl(218, 22%, 67%);
+}
+
+main {
+    margin: 0 auto;
+    /* border: 1px solid black; */
+    /* border-radius: 10px; */
+    width: 50%;
+    /* background-color: white; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    box-sizing: border-box;
+    line-height: 1.5;
+
+}
+
+.content1,
+.content2 {
+    box-sizing: border-box;
+    background-color: hsl(179, 62%, 43%);
+    color: white;
+    width: 50%;
+    padding: 25px;
+}
+
+/* main div {
+    padding: 020px;
+} */
+
+main div:nth-of-type(1) {
+    flex-grow: 1;
+    box-sizing: border-box;
+    background-color: white;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding: 25px;
+}
+
+main div:nth-of-type(2) {
+    border-bottom-left-radius: 15px;
+}
+
+main div:nth-of-type(3) {
+    border-bottom-right-radius: 15px;
+    background-color: hsla(179, 62%, 43%, 0.788);
+}
+
+main div span:nth-of-type(1) {
+    font-weight: 700;
+    line-height: 3;
+}
+
+main div span:nth-of-type(2) {
+    font-size: 2em;
+    font-weight: 700;
+}
+
+main div span:nth-of-type(3) {
+    color: rgba(255, 255, 255, 0.308);
+    margin: 5px;
+}
+
+button {
+    width: 100%;
+    background-color: hsl(71, 73%, 54%);
+    color: white;
+    border: none;
+    border-radius: 1.05em;
+    height: 50px;
+    margin-top: 35px;
+}
+
+.content2 p {
+    color: rgba(255, 255, 255, 0.473);
+    font-size: 0.85em;
+}
+
+@media (max-width: 375px) {
+    main {
+        width: 90%;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .content1,
+    .content2 {
+        box-sizing: border-box;
+        background-color: hsl(179, 62%, 43%);
+        color: white;
+        width: 100%;
+        padding: 25px;
+    }
+
+    main div:nth-of-type(2) {
+        border-bottom-left-radius: 0;
+    }
+
+    main div:nth-of-type(3) {
+        border-bottom-right-radius: 15px;
+        border-bottom-left-radius: 15px;
+        background-color: hsla(179, 62%, 43%, 0.788);
+    }
+
+    .gain-access {
+        font-size: 0.85em;
+        line-height: 2.0;
+    }
+}
