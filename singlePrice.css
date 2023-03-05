@@ -1,9 +1,6 @@
 body {
     font-family: 'Karla', sans-serif;
     background-color: hsl(204, 43%, 93%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .hassle-free {
@@ -98,12 +95,15 @@ button {
     font-size: 0.85em;
 }
 
+
 @media (max-width: 375px) {
     main {
         width: 90%;
         flex-direction: column;
         flex-wrap: wrap;
+        display: flex;
         justify-content: center;
+        align-items: center;
     }
 
     .content1,
